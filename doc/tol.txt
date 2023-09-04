@@ -1,0 +1,48 @@
+================================================================================
+
+Tol is Neovim color scheme inspired by the accessibility palettes of Paul Tol.
+
+================================================================================
+CONTENTS
+
+    1. Install .......... tol-setup
+    2. Usage ............ tol-usage
+
+================================================================================
+1. Install                               *tol-install*
+
+        " vim-plug
+        Plug 'dustypomerleau/tol.nvim'
+
+        -- lazy.nvim
+        require("lazy").setup({ "dustypomerleau/tol.nvim" })
+
+================================================================================
+2. Usage                                 *tol-usage*
+
+Enable the colorscheme:
+
+        " vimscript
+        colorscheme tol
+
+        -- lua
+        vim.cmd[[colorscheme tol]]
+
+Enable the Lualine theme:
+
+        require("lualine").setup { options = { theme = "tol"}}
+
+Set up Rainbow Delimiters:
+
+        local rainbow_delimiters = require("rainbow-delimiters")
+
+        vim.g.rainbow_delimiters = {
+            strategy = { [""] = rainbow_delimiters.strategy["global"] },
+            query = { [""] = "rainbow-delimiters" },
+            highlight = {
+                "RainbowDelimiterRed",
+                "RainbowDelimiterYellow",
+                "RainbowDelimiterBlue",
+            }
+        }
+
