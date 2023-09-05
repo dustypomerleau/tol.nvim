@@ -7,7 +7,7 @@ The theme is in early beta—more plugin support soon.
 
 [Rainbow delimiters][] are enabled in the screenshot.
 
-![tol screenshot](./images/tol.png)
+![Tol screenshot](images/tol.png)
 
 ## Supported plugins
 
