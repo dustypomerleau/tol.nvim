@@ -10,9 +10,6 @@ function M.setup()
     util.load()
 end
 
--- for backwards compatibility
-M.colorscheme = M.setup
-
 M.setup()
 
 return M
