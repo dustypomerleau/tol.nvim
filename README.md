@@ -12,6 +12,7 @@ The theme is in early beta—more plugin support soon.
 ## Supported plugins
 
 - [CoC][]
+- [FZF Lua][]
 - [Git Signs][]
 - [Indent Blankline][]
 - [Leap][]
@@ -82,6 +83,7 @@ vim.g.rainbow_delimiters = {
 ```
 
 [CoC]: https://github.com/neoclide/coc.nvim
+[FZF Lua]: https://github.com/ibhagwan/fzf-lua
 [Git Signs]: https://github.com/lewis6991/gitsigns.nvim
 [Indent Blankline]: https://github.com/lukas-reineke/indent-blankline.nvim
 [Leap]: https://github.com/ggandor/leap.nvim
