@@ -178,6 +178,7 @@ theme.loadTreesitter = function()
         ["@label"] = { fg = t.gray, },
         ["@method"] = { fg = t.green, },
         ["@namespace"] = { fg = t.taupe, },
+        ["@namespace.latex"] = { fg = t.gray, },
         ["@namespace.vim"] = { fg = t.gray, },
         ["@number"] = { fg = t.pink, },
         ["@operator"] = { fg = t.orange, },
