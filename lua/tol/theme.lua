@@ -217,9 +217,6 @@ theme.loadTreesitter = function()
         ["@type.qualifier"] = { fg = t.orange, },
         ["@variable"] = { fg = t.taupe, },
         ["@variable.builtin"] = { fg = t.yellow, },
-        -- perhaps change all variable builtin to yellow as ts this is also vbi
-        -- ["@variable.builtin.rust"] = { fg = t.gray, },
-        -- ["@variable.builtin.typescript"] = { fg = t.yellow, },
     }
 end
 
