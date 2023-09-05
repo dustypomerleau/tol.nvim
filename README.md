@@ -33,10 +33,6 @@ The theme is in early beta—more plugin support soon.
   <!-- - [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) -->
   <!-- - [vim-which-key](https://github.com/liuchengxu/vim-which-key) -->
 
-## Requirements
-
-- Neovim >= 0.5.0
-
 ## Installation
 
 ```vim
