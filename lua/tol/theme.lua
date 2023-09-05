@@ -217,8 +217,9 @@ theme.loadTreesitter = function()
         ["@type.builtin"] = { fg = t.yellow, },
         ["@type.qualifier"] = { fg = t.orange, },
         ["@variable"] = { fg = t.taupe, },
-        ["@variable.builtin"] = { fg = t.yellow, },
-        ["@variable.builtin.rust"] = { fg = t.gray, },
+        ["@variable.builtin"] = { fg = t.gray, },
+        ["@variable.builtin.javascript"] = { fg = t.yellow, },
+        ["@variable.builtin.typescript"] = { fg = t.yellow, },
     }
 end
 
