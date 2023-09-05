@@ -469,12 +469,6 @@ theme.loadPlugins = function()
         -- NeogitDiffDeleteHighlight = { fg = , style = "reverse", },
         -- NeogitDiffAddHighlight = { fg = , style = "reverse", },
 
-        -- -- GitGutter
-        -- GitGutterAdd = { fg = , }, -- diff mode: Added line |diff.txt|
-        -- GitGutterChange = { fg = , }, -- diff mode: Changed line |diff.txt|
-        -- GitGutterDelete = { fg = , }, -- diff mode: Deleted line |diff.txt|
-
-
         -- -- Telescope
         -- TelescopePromptBorder = { fg = , },
         -- TelescopeResultsBorder = { fg = , },
