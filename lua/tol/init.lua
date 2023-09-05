@@ -6,7 +6,7 @@ local util = require("tol.util")
 
 local M = {}
 
-M.setup = function()
+function M.setup()
     util.load()
 end
 
