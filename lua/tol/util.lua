@@ -13,12 +13,13 @@ function util.load()
     vim.o.termguicolors = true
     vim.g.colors_name = "tol"
 
-    local syntax = theme.loadSyntax()
-    local ui = theme.loadUi()
-    local treesitter = theme.loadTreesitter()
     local coc = theme.loadCoc()
-    local lsp = theme.loadLsp()
     local custom = theme.loadCustom()
+    local lsp = theme.loadLsp()
+    local plugins = theme.loadPlugins()
+    local syntax = theme.loadSyntax()
+    local treesitter = theme.loadTreesitter()
+    local ui = theme.loadUi()
 
     set_hl(syntax)
     set_hl(ui)
@@ -26,6 +27,7 @@ function util.load()
     set_hl(coc)
     set_hl(lsp)
     set_hl(custom)
+    set_hl(plugins)
     theme.loadTerminal()
 end
 
