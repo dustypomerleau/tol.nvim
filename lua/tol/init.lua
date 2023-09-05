@@ -4,10 +4,10 @@
 
 local util = require("tol.util")
 
-local M = {}
+local tol = {}
 
-function M.setup()
+function tol.setup()
     util.load()
 end
 
-return M
+return tol
