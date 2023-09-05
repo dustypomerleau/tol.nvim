@@ -587,14 +587,6 @@ theme.loadPlugins = function()
         -- CmpItemAbbr = { fg = , },
         -- CmpItemMenu = { fg = , },
 
-        -- -- headline
-        -- Headline1 = { fg = , bg = , bold = true, },
-        -- Headline2 = { fg = , bg = , bold = true, },
-        -- Headline3 = { fg = , bg = , bold = true, },
-        -- Headline4 = { fg = , bg = , bold = true, },
-        -- Headline5 = { fg = , bg = , bold = true, },
-        -- Headline6 = { fg = , bg = , bold = true, },
-
         -- -- nvim-dap
         -- DapBreakpoint = { fg = , },
         -- DapStopped = { fg = , },
