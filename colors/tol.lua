@@ -1,1 +1,1 @@
-require("tol").setup()
+require("tol")

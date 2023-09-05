@@ -13,4 +13,6 @@ end
 -- for backwards compatibility
 M.colorscheme = M.setup
 
+M.setup()
+
 return M
