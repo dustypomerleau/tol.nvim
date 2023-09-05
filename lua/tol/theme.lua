@@ -119,13 +119,14 @@ theme.loadUi = function()
         TermCursorNC = { fg = t.bg, bg = t.ui_gray, },
         ToolbarButton = { fg = t.blue, bg = t.none, style = "bold", },
         ToolbarLine = { fg = t.taupe, bg = t.none, },
-        VertSplit = { fg = t.bg, bg = t.bg, },
+        VertSplit = { fg = t.bg, bg = t.bg, }, -- deprecated in favor of WinSeparator, but still works
         Visual = { fg = t.none, bg = t.bg_mono3, },
         VisualMode = { fg = t.cyan, },
         VisualNOS = { fg = t.none, bg = t.bg_mono3, },
         WarningMsg = { fg = t.warning, },
         Warnings = { fg = t.warning, },
         WildMenu = { fg = t.orange, bg = t.none, style = "bold", },
+        WinSeparator = { fg = t.bg, bg = t.bg, },
     }
 end
 
@@ -405,7 +406,33 @@ end
 
 theme.loadPlugins = function()
     return {
-        -- nvim-notify
+        -- FZF Lua
+        FzfLuaBorder = { fg = t.ui_gray, },
+        FzfLuaSearch = { fg = t.orange, },
+        FzfLuaTitle = { fg = t.sky, },
+
+        -- GitSigns
+        GitSignsAdd = { fg = t.added, }, -- diff mode: Added line |diff.txt|
+        GitSignsChange = { fg = t.modified, }, -- diff mode: Changed line |diff.txt|
+        GitSignsCurrentLineBlame = { fg = t.comment, },
+        GitSignsDelete = { fg = t.deleted, }, -- diff mode: Deleted line |diff.txt|
+
+        -- Indent Blankline v2
+        IndentBlanklineChar = { fg = t.ui_gray, },
+        IndentBlanklineContextChar = { fg = t.taupe, },
+        -- Indent Blankline v3
+        RainbowRed = { fg = t.purple, },
+        RainbowYellow = { fg = t.lemon, },
+        RainbowBlue = { fg = t.cyan, },
+
+        -- Leap
+        LeapBackdrop = { fg = t.comment, },
+        LeapLabelPrimary = { fg = "yellow", bg = t.bg_mono3, style = "nocombine", },
+        LeapLabelSecondary = { fg = "cyan", bg = t.bg_mono3, style = "nocombine", },
+        LeapLabelSelected = { fg = "yellow", bg = t.cursor_pink, style = "nocombine", },
+        LeapMatch = { fg = "yellow", bg = t.search_bg, style = "nocombine", },
+
+        -- Nvim Notify
         NotifyDEBUGBorder = { fg = t.ui_gray, },
         NotifyDEBUGIcon = { fg = t.info, },
         NotifyDEBUGTitle = { fg = t.info, },
@@ -422,12 +449,10 @@ theme.loadPlugins = function()
         NotifyWARNIcon = { fg = t.warning, },
         NotifyWARNTitle = { fg = t.warning, },
 
-        -- Leap
-        LeapBackdrop = { fg = t.comment, },
-        LeapLabelPrimary = { fg = "yellow", bg = t.bg_mono3, style = "nocombine", },
-        LeapLabelSecondary = { fg = "cyan", bg = t.bg_mono3, style = "nocombine", },
-        LeapLabelSelected = { fg = "yellow", bg = t.cursor_pink, style = "nocombine", },
-        LeapMatch = { fg = "yellow", bg = t.search_bg, style = "nocombine", },
+        -- Rainbow Delimiters
+        RainbowDelimiterRed = { fg = t.purple, },
+        RainbowDelimiterYellow = { fg = t.lemon, },
+        RainbowDelimiterBlue = { fg = t.cyan, },
 
         -- -- LspTrouble
         -- LspTroubleText = { fg = , },
@@ -448,17 +473,6 @@ theme.loadPlugins = function()
         -- GitGutterChange = { fg = , }, -- diff mode: Changed line |diff.txt|
         -- GitGutterDelete = { fg = , }, -- diff mode: Deleted line |diff.txt|
 
-        -- GitSigns
-        GitSignsAdd = { fg = t.added, }, -- diff mode: Added line |diff.txt|
-        -- GitSignsAddNr = { fg = , }, -- diff mode: Added line |diff.txt|
-        -- GitSignsAddLn = { fg = , }, -- diff mode: Added line |diff.txt|
-        GitSignsChange = { fg = t.modified, }, -- diff mode: Changed line |diff.txt|
-        -- GitSignsChangeNr = { fg = , }, -- diff mode: Changed line |diff.txt|
-        -- GitSignsChangeLn = { fg = , }, -- diff mode: Changed line |diff.txt|
-        GitSignsDelete = { fg = t.deleted, }, -- diff mode: Deleted line |diff.txt|
-        -- GitSignsDeleteNr = { fg = , }, -- diff mode: Deleted line |diff.txt|
-        -- GitSignsDeleteLn = { fg = , }, -- diff mode: Deleted line |diff.txt|
-        GitSignsCurrentLineBlame = { fg = t.comment, },
 
         -- -- Telescope
         -- TelescopePromptBorder = { fg = , },
@@ -578,10 +592,6 @@ theme.loadPlugins = function()
         -- CmpItemAbbr = { fg = , },
         -- CmpItemMenu = { fg = , },
 
-        -- Indent Blankline
-        IndentBlanklineChar = { fg = t.ui_gray, },
-        IndentBlanklineContextChar = { fg = t.taupe, },
-
         -- -- headline
         -- Headline1 = { fg = , bg = , bold = true, },
         -- Headline2 = { fg = , bg = , bold = true, },
@@ -614,11 +624,6 @@ theme.loadPlugins = function()
         -- DapUIBreakpointsInfo = { fg = , },
         -- DapUIBreakpointsCurrentLine = { fg = , },
         -- DapUIBreakpointsLine = { fg = , },
-
-        -- Rainbow Delimiters
-        RainbowDelimiterRed = { fg = t.purple, },
-        RainbowDelimiterYellow = { fg = t.lemon, },
-        RainbowDelimiterBlue = { fg = t.cyan, },
 
         -- -- mini.nvim
         -- MiniCompletionActiveParameter = { style = "underline", },
