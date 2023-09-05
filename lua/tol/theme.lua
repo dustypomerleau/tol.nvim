@@ -17,23 +17,23 @@ theme.loadSyntax = function()
         Exception = { fg = t.orange, }, -- try, catch
         Float = { fg = t.pink, }, -- a floating point numeric constant
         Function = { fg = t.green, },
-        htmlH1 = { fg = t.purple, style = "bold", },
-        htmlH2 = { fg = t.lemon, style = "bold", },
-        htmlH3 = { fg = t.cyan, style = "bold", },
-        htmlH4 = { fg = t.purple, style = "bold", },
-        htmlH5 = { fg = t.lemon, style = "bold", },
-        htmlLink = { fg = t.sky, style = "underline", },
+        htmlH1 = { fg = t.purple, bold = true, },
+        htmlH2 = { fg = t.lemon, bold = true, },
+        htmlH3 = { fg = t.cyan, bold = true, },
+        htmlH4 = { fg = t.purple, bold = true, },
+        htmlH5 = { fg = t.lemon, bold = true, },
+        htmlLink = { fg = t.sky, underline = true, },
         Identifier = { fg = t.blue, }, -- types
         Ignore = { fg = t.comment, }, -- left blank, hidden
         Include = { fg = t.orange, },
         Keyword = { fg = t.orange, },
         Label = { fg = t.orange, },
         Macro = { fg = t.yellow, },
-        markdownH1 = { fg = t.purple, style = "bold", },
+        markdownH1 = { fg = t.purple, bold = true, },
         markdownH1Delimiter = { fg = t.sky, },
-        markdownH2 = { fg = t.lemon, style = "bold", },
+        markdownH2 = { fg = t.lemon, bold = true, },
         markdownH2Delimiter = { fg = t.sky, },
-        markdownH3 = { fg = t.cyan, style = "bold", },
+        markdownH3 = { fg = t.cyan, bold = true, },
         markdownH3Delimiter = { fg = t.sky, },
         Number = { fg = t.pink, },
         Operator = { fg = t.orange, },
@@ -49,11 +49,11 @@ theme.loadSyntax = function()
         String = { fg = t.forest, },
         Structure = { fg = t.blue, }, -- struct, enum
         Tag = { fg = t.pink, },
-        Title = { fg = t.orange, style = "bold", },
-        Todo = { fg = t.sky, style = "bold", }, -- todo, fixme, etc.
+        Title = { fg = t.orange, bold = true, },
+        Todo = { fg = t.sky, bold = true, }, -- todo, fixme, etc.
         Type = { fg = t.blue, },
         Typedef = { fg = t.orange, },
-        Underlined = { style = "underline", },
+        Underlined = { underline = true, },
     }
 end
 
@@ -85,7 +85,7 @@ theme.loadUi = function()
         IncSearch = { fg = t.search_fg, bg = t.search_bg, },
         InsertMode = { fg = t.purple, },
         LineNr = { fg = t.ui_gray, },
-        MatchParen = { fg = t.cursor_pink, bg = t.bg_mono3, style = "bold", },
+        MatchParen = { fg = t.cursor_pink, bg = t.bg_mono3, bold = true, },
         ModeMsg = { fg = t.taupe, },
         MoreMsg = { fg = t.taupe, },
         NonText = { fg = t.comment, },
@@ -103,10 +103,10 @@ theme.loadUi = function()
         Search = { fg = t.search_fg, bg = t.search_bg, },
         SignColumn = { bg = t.bg, },
         SpecialKey = { fg = t.comment, },
-        SpellBad = { fg = t.error, style = "undercurl", },
-        SpellCap = { fg = t.warning, style = "undercurl", },
-        SpellLocal = { fg = t.warning, style = "undercurl", },
-        SpellRare = { fg = t.warning, style = "undercurl", },
+        SpellBad = { fg = t.error, undercurl = true, },
+        SpellCap = { fg = t.warning, undercurl = true, },
+        SpellLocal = { fg = t.warning, undercurl = true, },
+        SpellRare = { fg = t.warning, undercurl = true, },
         StatusLine = { fg = t.taupe, bg = t.bg_shade1, },
         StatusLineNC = { fg = t.taupe, bg = t.bg_shade1, },
         StatusLineTerm = { fg = t.taupe, bg = t.bg_shade1, },
@@ -117,7 +117,7 @@ theme.loadUi = function()
         TablineSel = { fg = t.taupe, bg = t.bg_mono1, },
         TermCursor = { fg = t.cursor_yellow, bg = t.cursor_pink, },
         TermCursorNC = { fg = t.bg, bg = t.ui_gray, },
-        ToolbarButton = { fg = t.blue, bg = t.none, style = "bold", },
+        ToolbarButton = { fg = t.blue, bg = t.none, bold = true, },
         ToolbarLine = { fg = t.taupe, bg = t.none, },
         VertSplit = { fg = t.bg, bg = t.bg, }, -- deprecated in favor of WinSeparator, but still works
         Visual = { fg = t.none, bg = t.bg_mono3, },
@@ -125,7 +125,7 @@ theme.loadUi = function()
         VisualNOS = { fg = t.none, bg = t.bg_mono3, },
         WarningMsg = { fg = t.warning, },
         Warnings = { fg = t.warning, },
-        WildMenu = { fg = t.orange, bg = t.none, style = "bold", },
+        WildMenu = { fg = t.orange, bg = t.none, bold = true, },
         WinSeparator = { fg = t.bg, bg = t.bg, },
     }
 end
@@ -200,16 +200,16 @@ theme.loadTreesitter = function()
         ["@tag.attribute"] = { fg = t.gray, },
         ["@tag.delimiter"] = { fg = t.sky, },
         ["@text"] = { fg = t.taupe, },
-        ["@text.emphasis"] = { fg = t.sky, style = "italic", },
+        ["@text.emphasis"] = { fg = t.sky, italic = true, },
         ["@text.environment.latex"] = { fg = t.orange, },
         ["@text.environment.name.latex"] = { fg = t.blue, },
         ["@text.literal"] = { fg = t.pink, }, -- inline code
         ["@text.math"] = { fg = t.pink, },
         ["@text.reference"] = { fg = t.pink, },
-        ["@text.strike"] = { fg = t.comment, style = "strikethrough", },
-        ["@text.strong"] = { fg = t.sky, style = "bold", },
+        ["@text.strike"] = { fg = t.comment, strikethrough = true, },
+        ["@text.strong"] = { fg = t.sky, bold = true, },
         ["@text.title"] = { fg = t.orange, },
-        ["@text.underline"] = { fg = t.yellow, style = "underline", },
+        ["@text.underline"] = { fg = t.yellow, underline = true, },
         ["@text.uri"] = { fg = t.forest, },
         ["@text.warning"] = { fg = t.warning, },
         ["@type"] = { fg = t.blue, },
@@ -390,10 +390,10 @@ theme.loadLsp = function()
         LspDiagnosticsSignHint = { fg = t.info, },
         LspDiagnosticsSignInformation = { fg = t.info, },
         LspDiagnosticsSignWarning = { fg = t.warning, },
-        LspDiagnosticsUnderlineError = { style = "undercurl", sp = t.error, },
-        LspDiagnosticsUnderlineHint = { style = "undercurl", sp = t.info, },
-        LspDiagnosticsUnderlineInformation = { style = "undercurl", sp = t.info, },
-        LspDiagnosticsUnderlineWarning = { style = "undercurl", sp = t.warning, },
+        LspDiagnosticsUnderlineError = { undercurl = true, sp = t.error, },
+        LspDiagnosticsUnderlineHint = { undercurl = true, sp = t.info, },
+        LspDiagnosticsUnderlineInformation = { undercurl = true, sp = t.info, },
+        LspDiagnosticsUnderlineWarning = { undercurl = true, sp = t.warning, },
         LspDiagnosticsVirtualTextError = { fg = t.error, },
         LspDiagnosticsVirtualTextHint = { fg = t.info, },
         LspDiagnosticsVirtualTextInformation = { fg = t.info, },
@@ -427,10 +427,10 @@ theme.loadPlugins = function()
 
         -- Leap
         LeapBackdrop = { fg = t.comment, },
-        LeapLabelPrimary = { fg = "yellow", bg = t.bg_mono3, style = "nocombine", },
-        LeapLabelSecondary = { fg = "cyan", bg = t.bg_mono3, style = "nocombine", },
-        LeapLabelSelected = { fg = "yellow", bg = t.cursor_pink, style = "nocombine", },
-        LeapMatch = { fg = "yellow", bg = t.search_bg, style = "nocombine", },
+        LeapLabelPrimary = { fg = "yellow", bg = t.bg_mono3, nocombine = true, },
+        LeapLabelSecondary = { fg = "cyan", bg = t.bg_mono3, nocombine = true, },
+        LeapLabelSelected = { fg = "yellow", bg = t.cursor_pink, nocombine = true, },
+        LeapMatch = { fg = "yellow", bg = t.search_bg, nocombine = true, },
 
         -- Nvim Notify
         NotifyDEBUGBorder = { fg = t.ui_gray, },
@@ -583,7 +583,7 @@ theme.loadPlugins = function()
         -- ReferencesIcon = { fg = , },
         -- SagaShadow = { fg = "black", },
         -- TargetFileName = { fg = , },
-        -- TargetWord = { fg = , style = "bold", },
+        -- TargetWord = { fg = , bold = true, },
 
         -- -- Cmp
         -- CmpItemKind = { fg = , },
@@ -626,19 +626,19 @@ theme.loadPlugins = function()
         -- DapUIBreakpointsLine = { fg = , },
 
         -- -- mini.nvim
-        -- MiniCompletionActiveParameter = { style = "underline", },
+        -- MiniCompletionActiveParameter = { underline = true, },
 
         -- MiniCursorword = { bg = , },
         -- MiniCursorwordCurrent = { bg = , },
 
         -- MiniIndentscopeSymbol = { fg = , },
-        -- MiniIndentscopePrefix = { style = "nocombine", }, -- Make it invisible
+        -- MiniIndentscopePrefix = { nocombine = true, }, -- Make it invisible
 
         -- MiniJump = { fg = , bg = , },
 
         -- MiniJump2dSpot = { fg = , style = "bold,nocombine", },
 
-        -- MiniStarterCurrent = { style = "nocombine", },
+        -- MiniStarterCurrent = { nocombine = true, },
         -- MiniStarterFooter = { fg = , style = italic, },
         -- MiniStarterHeader = { fg = , },
         -- MiniStarterInactive = { link = "Comment", },
