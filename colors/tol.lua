@@ -1,1 +1,1 @@
-require("tol")._load()
+require("tol").setup()

@@ -6,8 +6,11 @@ local util = require("tol.util")
 
 local M = {}
 
-function M._load()
+function M.setup()
     util.load()
 end
+
+-- for backwards compatibility
+M.colorscheme = M.setup
 
 return M
