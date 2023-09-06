@@ -420,9 +420,9 @@ theme.loadPlugins = function()
         IndentBlanklineChar = { fg = t.ui_gray, },
         IndentBlanklineContextChar = { fg = t.taupe, },
         -- Indent Blankline v3
-        -- RainbowRed = { fg = t.purple, },
-        -- RainbowYellow = { fg = t.lemon, },
-        -- RainbowBlue = { fg = t.cyan, },
+        RainbowRed = { fg = t.purple, },
+        RainbowYellow = { fg = t.lemon, },
+        RainbowBlue = { fg = t.cyan, },
 
         -- Leap
         LeapBackdrop = { fg = t.comment, },
