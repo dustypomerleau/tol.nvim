@@ -224,7 +224,7 @@ end
 theme.loadCustom = function()
     return {
         tmuxOptions = { link = "@field", },
-        zshBrackets = { fg = t.orange, },
+        zshBrackets = { link = "Punctuation", },
         zshDeref = { fg = t.pink, },
         zshOperator = { link = "Operator", },
         zshParentheses = { link = "Punctuation", },
