@@ -5,7 +5,7 @@ As always, credit to [Paul Tol](https://personal.sron.nl/~pault/) for the base c
 
 The theme is in early beta—more plugin support soon.
 
-[Rainbow delimiters][] are enabled in the screenshot.
+[Rainbow delimiters][] and [Lualine][] are used in the screenshot.
 
 ![Tol screenshot](images/tol.png)
 
