@@ -34,10 +34,10 @@ return {
 
     -- backgrounds and foregrounds
     bg = "#292d3e", -- default bg
-    bg_mono1 = "#33384d",
+    bg_mono1 = "#33384d", -- floats
     bg_mono2 = "#3d435d",
     bg_mono3 = "#474e6c",
-    bg_shade1 = "#242837",
+    bg_shade1 = "#242837", -- lualine, current line
     bg_shade2 = "#202431",
     bg_shade3 = "#1c1f2b",
     bg_tint1 = "#3e4251",
