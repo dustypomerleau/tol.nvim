@@ -405,6 +405,13 @@ end
 
 theme.loadPlugins = function()
     return {
+        -- -- Cmp
+        -- CmpItemKind = { fg = , },
+        -- CmpItemAbbrMatch = { fg = , style = bold, },
+        -- CmpItemAbbrMatchFuzzy = { fg = , style = bold, },
+        -- CmpItemAbbr = { fg = , },
+        -- CmpItemMenu = { fg = , },
+
         -- FZF Lua
         FzfLuaBorder = { fg = t.ui_gray, },
         FzfLuaSearch = { fg = t.orange, },
@@ -578,12 +585,6 @@ theme.loadPlugins = function()
         -- TargetFileName = { fg = , },
         -- TargetWord = { fg = , bold = true, },
 
-        -- -- Cmp
-        -- CmpItemKind = { fg = , },
-        -- CmpItemAbbrMatch = { fg = , style = bold, },
-        -- CmpItemAbbrMatchFuzzy = { fg = , style = bold, },
-        -- CmpItemAbbr = { fg = , },
-        -- CmpItemMenu = { fg = , },
     }
 end
 
