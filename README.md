@@ -43,7 +43,14 @@ Plug 'dustypomerleau/tol.nvim'
 
 ```lua
 -- lazy.nvim
-require("lazy").setup({ "dustypomerleau/tol.nvim" })
+require("lazy").setup({
+    {
+        "dustypomerleau/tol.nvim",
+        lazy = false, -- load your main colorscheme at startup
+        priority = 1000, -- load colorscheme first
+        config = function() vim.cmd([[colorscheme tol]]) end,
+    },
+})
 ```
 
 ## Usage
