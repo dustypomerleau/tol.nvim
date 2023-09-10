@@ -20,6 +20,7 @@ The theme is in early beta—more plugin support soon.
 - [Lualine][]
 - [Rainbow Delimiters][]
 - [Treesitter][]
+- [Yanky][]
   <!-- - [aerial.nvim](https://github.com/stevearc/aerial.nvim) -->
   <!-- - [BufferLine](https://github.com/akinsho/nvim-bufferline.lua) -->
   <!-- - [Dashboard](https://github.com/glepnir/dashboard-nvim) -->
@@ -98,3 +99,4 @@ vim.g.rainbow_delimiters = {
 [Lualine]: https://github.com/hoob3rt/lualine.nvim
 [Rainbow Delimiters]: https://github.com/HiPhish/rainbow-delimiters.nvim
 [Treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
+[Yanky]: https://github.com/gbprod/yanky.nvim

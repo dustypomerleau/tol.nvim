@@ -460,6 +460,9 @@ theme.loadPlugins = function()
         RainbowDelimiterYellow = { fg = t.lemon, },
         RainbowDelimiterBlue = { fg = t.cyan, },
 
+        -- Yanky
+        YankyPut = { link = CurSearch, },
+
         -- -- LspTrouble
         -- LspTroubleText = { fg = , },
         -- LspTroubleCount = { fg = , bg = , },
