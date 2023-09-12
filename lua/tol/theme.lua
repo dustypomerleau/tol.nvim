@@ -464,6 +464,7 @@ theme.loadPlugins = function()
 
         -- Yanky
         YankyPut = { fg = t.cursor_yellow, bg = t.search_focused_bg, },
+        YankyYanked = { fg = t.cursor_yellow, bg = t.search_focused_bg, },
 
         -- -- LspTrouble
         -- LspTroubleText = { fg = , },
