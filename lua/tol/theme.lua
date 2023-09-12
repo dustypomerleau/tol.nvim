@@ -1,3 +1,5 @@
+-- todo: links may be broken
+
 local t = require("tol.colors")
 
 local theme = {}
@@ -461,7 +463,7 @@ theme.loadPlugins = function()
         RainbowDelimiterBlue = { fg = t.cyan, },
 
         -- Yanky
-        YankyPut = { link = "CurSearch", },
+        YankyPut = { fg = t.cursor_yellow, bg = t.search_focused_bg, },
 
         -- -- LspTrouble
         -- LspTroubleText = { fg = , },
