@@ -420,8 +420,8 @@ theme.loadLsp = function()
         ["@lsp.type.selfTypeKeyword"] = { fg = t.blue, },
         ["@lsp.type.struct"] = { fg = t.blue, },
         ["@lsp.type.type"] = { fg = t.blue, },
-        ["@lsp.type.typeAlias"] = { fg = t.yellow, },     -- vs blue
-        ["@lsp.type.typeParameter"] = { fg = t.yellow, }, -- vs blue
+        ["@lsp.type.typeAlias"] = { fg = t.blue, },
+        ["@lsp.type.typeParameter"] = { fg = t.blue, },
         ["@lsp.type.variable"] = { fg = t.taupe, },
     }
 end
