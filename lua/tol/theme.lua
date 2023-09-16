@@ -1,4 +1,5 @@
 -- see neovim repo at src/nvim/highlight_group.c
+-- todo: fix borders on :LspInfo, :Lazy update, etc.
 
 local t = require("tol.colors")
 
@@ -402,6 +403,8 @@ theme.loadLsp = function()
         LspReferenceRead = { bg = t.bg_mono1, },
         LspReferenceText = { bg = t.bg_mono1, },
         LspReferenceWrite = { bg = t.bg_mono1, },
+        ["@lsp.type.attributeBracket"] = { fg = t.purple, },
+        ["@lsp.type.builtinAttribute"] = { fg = t.gray, },
         ["@lsp.type.builtinType"] = { fg = t.yellow, },
         ["@lsp.type.class"] = { fg = t.pink, },
         ["@lsp.type.comment"] = { fg = t.comment, },
@@ -409,6 +412,7 @@ theme.loadLsp = function()
         ["@lsp.type.enum"] = { fg = t.gray, },
         ["@lsp.type.enumMember"] = { fg = t.gray, },
         ["@lsp.type.function"] = { fg = t.green, },
+        ["@lsp.type.generic"] = { fg = t.gray, },
         ["@lsp.type.interface"] = { fg = t.pink, },
         ["@lsp.type.keyword"] = { fg = t.orange, },
         ["@lsp.type.macro"] = { fg = t.yellow, },
