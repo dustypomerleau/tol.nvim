@@ -466,6 +466,9 @@ theme.loadPlugins = function()
         LeapLabelSelected = { fg = "yellow", bg = t.cursor_pink, nocombine = true, },
         LeapMatch = { fg = "yellow", bg = t.search_bg, nocombine = true, },
 
+        -- Nvim LSPconfig
+        LspInfoBorder = { fg = t.ui_gray, },
+
         -- Nvim Notify
         NotifyDEBUGBorder = { fg = t.ui_gray, },
         NotifyDEBUGIcon = { fg = t.info, },
