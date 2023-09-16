@@ -422,6 +422,7 @@ theme.loadLsp = function()
         ["@lsp.type.property"] = { fg = t.gray, },
         ["@lsp.type.selfKeyword"] = { fg = t.gray, },
         ["@lsp.type.selfTypeKeyword"] = { fg = t.blue, },
+        ["@lsp.type.string"] = { fg = t.forest, },
         ["@lsp.type.struct"] = { fg = t.blue, },
         ["@lsp.type.type"] = { fg = t.blue, },
         ["@lsp.type.typeAlias"] = { fg = t.blue, },
