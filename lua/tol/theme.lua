@@ -92,7 +92,7 @@ theme.loadUi = function()
         MoreMsg = { fg = t.taupe, },
         NonText = { fg = t.comment, },
         Normal = { fg = t.taupe, bg = t.bg, },
-        NormalFloat = { fg = t.taupe, bg = t.bg, border = "rounded", },
+        NormalFloat = { fg = t.taupe, bg = t.bg, },
         NormalMode = { fg = t.taupe, },
         Pmenu = { fg = t.taupe, bg = t.bg_mono1, },
         PmenuSbar = { bg = t.bg_shade1, },
