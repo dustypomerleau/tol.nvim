@@ -493,6 +493,12 @@ theme.loadPlugins = function()
         RainbowDelimiterYellow = { fg = t.lemon, },
         RainbowDelimiterBlue = { fg = t.cyan, },
 
+        -- Telescope, see https://github.com/nvim-telescope/telescope.nvim/blob/master/plugin/telescope.lua
+        TelescopeBorder = { fg = t.ui_gray, },
+        TelescopeMatching = { fg = t.orange, },
+        TelescopeSelectionCaret = { fg = t.purple, },
+        TelescopeTitle = { fg = t.sky, },
+
         -- Yanky
         YankyPut = { link = "CurSearch", },
         YankyYanked = { link = "CurSearch", },
@@ -510,14 +516,6 @@ theme.loadPlugins = function()
         -- NeogitDiffContextHighlight = { bg = , },
         -- NeogitDiffDeleteHighlight = { fg = , style = "reverse", },
         -- NeogitDiffAddHighlight = { fg = , style = "reverse", },
-
-        -- -- Telescope
-        -- TelescopePromptBorder = { fg = , },
-        -- TelescopeResultsBorder = { fg = , },
-        -- TelescopePreviewBorder = { fg = , },
-        -- TelescopeSelectionCaret = { fg = , },
-        -- TelescopeSelection = { fg = , bg = , },
-        -- TelescopeMatching = { link = "Search", },
 
         -- -- NvimTree
         -- NvimTreeRootFolder = { fg = , },
