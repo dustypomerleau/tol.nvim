@@ -408,6 +408,7 @@ theme.loadLsp = function()
         ["@lsp.type.class"] = { fg = t.pink, },
         ["@lsp.type.comment"] = { fg = t.comment, },
         ["@lsp.type.decorator"] = { fg = t.gray, },
+        ["@lsp.type.derive"] = { fg = t.pink, },
         ["@lsp.type.enum"] = { fg = t.gray, },
         ["@lsp.type.enumMember"] = { fg = t.gray, },
         ["@lsp.type.function"] = { fg = t.green, },
