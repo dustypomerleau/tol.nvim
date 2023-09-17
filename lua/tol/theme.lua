@@ -441,6 +441,8 @@ theme.loadPlugins = function()
 
         -- FZF Lua
         FzfLuaBorder = { fg = t.ui_gray, },
+        FzfLuaBufLineNr = { fg = t.pink, },
+        FzfLuaBufName = { fg = t.sky, },
         FzfLuaSearch = { fg = t.orange, },
         FzfLuaTitle = { fg = t.sky, },
 
