@@ -188,7 +188,7 @@ theme.loadTreesitter = function()
         ["@preproc"] = { fg = t.orange, },
         ["@property"] = { fg = t.gray, },
         ["@punctuation"] = { fg = t.sky, },
-        ["@punctuation.bracket"] = { fg = t.purple, }, -- a stopgap for missing brackets in rainbow,
+        ["@punctuation.bracket"] = { fg = t.purple, }, -- some brackets are missed by rainbow,
         ["@punctuation.delimiter"] = { fg = t.sky, },
         ["@punctuation.special"] = { fg = t.sky, },
         ["@punctuation.special.latex"] = { fg = t.pink, },
