@@ -439,12 +439,42 @@ theme.loadPlugins = function()
         -- CmpItemAbbrMatchFuzzy = { fg = , style = bold, },
         -- CmpItemAbbr = { fg = , },
         -- CmpItemMenu = { fg = , },
+        --
+        -- Highlight                                                        *cmp-highlight*
+
+        -- *CmpItemAbbr*
+        --   Highlight group for unmatched characters of each completion field.
+
+        -- *CmpItemAbbrDeprecated*
+        --   Highlight group for unmatched characters of each deprecated completion field.
+
+        -- *CmpItemAbbrMatch*
+        --   Highlight group for matched characters of each completion field. Matched characters
+        --   must form a substring of a field which share a starting position.
+
+        -- *CmpItemAbbrMatchFuzzy*
+        --   Highlight group for fuzzy-matched characters of each completion field.
+
+        -- *CmpItemKind*
+        --   Highlight group for the kind of the field.
+
+        -- NOTE: `kind` is a symbol after each completion option.
+
+        -- *CmpItemKind%KIND_NAME%*
+        --   Highlight group for the kind of the field for a specific `lsp.CompletionItemKind`.
+        --   If you only want to overwrite the `method` kind's highlight group, you can do this:
+        -- >vim
+        --     highlight CmpItemKindMethod guibg=NONE guifg=Orange
+        -- <
+        -- *CmpItemMenu*
+        --   The menu field's highlight group.
+
 
         -- FZF Lua
         FzfLuaBorder = { fg = t.ui_gray, },
         FzfLuaBufLineNr = { fg = t.pink, },
         FzfLuaBufName = { fg = t.sky, },
-        FzfLuaSearch = { fg = t.orange, },
+        FzfLuaSearch = { fg = t.orange, bold = true, },
         FzfLuaTitle = { fg = t.sky, },
 
         -- GitSigns
