@@ -474,7 +474,6 @@ theme.loadPlugins = function()
         FzfLuaBorder = { fg = t.ui_gray, },
         FzfLuaBufLineNr = { fg = t.pink, },
         FzfLuaBufName = { fg = t.sky, },
-        FzfLuaSearch = { fg = t.orange, bold = true, },
         FzfLuaTitle = { fg = t.sky, },
 
         -- GitSigns
