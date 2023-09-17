@@ -1,5 +1,4 @@
 -- see neovim repo at src/nvim/highlight_group.c
--- todo: fix borders on :LspInfo, :Lazy update, etc.
 
 local t = require("tol.colors")
 
