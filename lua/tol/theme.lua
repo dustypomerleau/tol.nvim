@@ -206,7 +206,7 @@ theme.loadTreesitter = function()
         ["@text.emphasis"] = { fg = t.sky, italic = true, },
         ["@text.environment.latex"] = { fg = t.orange, },
         ["@text.environment.name.latex"] = { fg = t.blue, },
-        ["@text.literal"] = { fg = t.pink, }, -- inline code
+        ["@text.literal"] = { fg = t.yellow, }, -- inline code
         ["@text.math"] = { fg = t.pink, },
         ["@text.reference"] = { fg = t.pink, },
         ["@text.strike"] = { fg = t.comment, strikethrough = true, },
