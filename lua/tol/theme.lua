@@ -439,9 +439,9 @@ theme.loadPlugins = function()
 
         -- Flash
         FlashBackdrop = { link = "Comment", },
-        FlashCurrent = { fg = "cyan", },
-        FlashLabel = { fg = "yellow", bg = t.bg_mono3, },
-        FlashMatch = { fg = t.search_fg, bg = t.bg_mono3, },
+        FlashCurrent = { link = "CurSearch", },
+        FlashLabel = { fg = "yellow", },
+        FlashMatch = { link = "IncSearch", },
 
         -- FZF Lua
         FzfLuaBorder = { fg = t.ui_gray, },
@@ -497,7 +497,7 @@ theme.loadPlugins = function()
 
         -- Telescope, see https://github.com/nvim-telescope/telescope.nvim/blob/master/plugin/telescope.lua
         TelescopeBorder = { fg = t.ui_gray, },
-        TelescopeMatching = { fg = t.orange, },
+        TelescopeMatching = { fg = t.orange, bold = true, },
         TelescopeSelectionCaret = { fg = t.purple, },
         TelescopeTitle = { fg = t.sky, },
 
