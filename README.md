@@ -1,9 +1,9 @@
 # Tol.nvim
 
-This is a Neovim port of my [Tol theme for VS Code](https://github.com/dustypomerleau/tol).
+Tol.nvim is a complete rework of my [Tol theme for VS Code](https://github.com/dustypomerleau/tol), with more consistent highlighting across languages.
+It also has better separation of UI and syntax palettes, so it's easier to distinguish tooling feedback from code.
+Tol believes that punctuation and delimiters are first-class citizens—we hope you do, too.
 As always, credit to [Paul Tol](https://personal.sron.nl/~pault/) for the base colors and inspiration.
-
-The theme is in early beta—more plugin support soon.
 
 [Rainbow delimiters][] and [Lualine][] are used in the screenshot.
 
@@ -27,7 +27,21 @@ The theme is in early beta—more plugin support soon.
 - [Trouble][]
 - [Yanky][]
 
+Your favorite plugin might not be supported yet. Feel free to submit a PR.
+
 ## Installation
+
+```lua
+-- lazy.nvim
+require("lazy").setup({
+    {
+        "dustypomerleau/tol.nvim",
+        lazy = false, -- load the colorscheme at startup
+        priority = 1000, -- load colorscheme first
+        config = true,
+    },
+})
+```
 
 ```vim
 " vim-plug
@@ -36,18 +50,6 @@ call plug#begin()
 call plug#end()
 
 colorscheme tol
-```
-
-```lua
--- lazy.nvim
-require("lazy").setup({
-    {
-        "dustypomerleau/tol.nvim",
-        lazy = false, -- load your main colorscheme at startup
-        priority = 1000, -- load colorscheme first
-        config = true,
-    },
-})
 ```
 
 ## Extras

@@ -1,36 +1,35 @@
 ================================================================================
 
-Tol is Neovim color scheme inspired by the accessibility palettes of Paul Tol.
+Tol is a Neovim color scheme inspired by the accessibility palettes of Paul Tol.
 
 ================================================================================
 CONTENTS
 
-    1. Install .......... tol-setup
-    2. Usage ............ tol-usage
+    1. Installation and setup .......... tol-setup
 
 ================================================================================
-1. Install                               *tol-install*
-
-        " vim-plug
-        Plug 'dustypomerleau/tol.nvim'
+1. Installation and setup                *tol-setup*
 
         -- lazy.nvim
-        require("lazy").setup({ "dustypomerleau/tol.nvim" })
+        require("lazy").setup({
+            {
+                "dustypomerleau/tol.nvim",
+                lazy = false, -- load the colorscheme at startup
+                priority = 1000, -- load colorscheme first
+                config = true,
+            },
+        })
 
-================================================================================
-2. Usage                                 *tol-usage*
+        " vim-plug
+        call plug#begin()
+            Plug 'dustypomerleau/tol.nvim'
+        call plug#end()
 
-Enable the colorscheme:
-
-        " vimscript
         colorscheme tol
-
-        -- lua
-        vim.cmd[[colorscheme tol]]
 
 Enable the Lualine theme:
 
-        require("lualine").setup { options = { theme = "tol"}}
+        require("lualine").setup({ options = { theme = "tol" }})
 
 Set up Rainbow Delimiters:
 
