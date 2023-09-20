@@ -7,7 +7,7 @@ local theme = {}
 theme.loadSyntax = function()
     return {
         Boolean = { fg = t.pink, },
-        Character = { fg = t.green, },
+        Character = { fg = t.forest, },
         Comment = { fg = t.comment, },
         Conceal = { fg = t.none, bg = t.bg, },
         Conditional = { fg = t.orange, },
@@ -155,7 +155,7 @@ theme.loadTreesitter = function()
     return {
         ["@attribute"] = { fg = t.gray, },
         ["@boolean"] = { fg = t.pink, },
-        ["@character"] = { fg = t.sky, },
+        ["@character"] = { fg = t.forest, },
         ["@comment"] = { fg = t.comment, },
         ["@comment.documentation"] = { fg = t.comment, },
         ["@conditional"] = { fg = t.orange, },
