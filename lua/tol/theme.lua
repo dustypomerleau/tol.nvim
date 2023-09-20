@@ -438,8 +438,8 @@ theme.loadPlugins = function()
         CmpItemAbbrMatchFuzzy = { fg = t.orange, bold = true, },
 
         -- Flash
-        FlashMatch = { link = "IncSearch", },
-        FlashCurrent = { link = "CurSearch", },
+        FlashMatch = { link = "Visual", },
+        FlashCurrent = { fg = "cyan", bg = t.bg_mono3, },
         FlashBackdrop = { link = "Comment", },
         FlashLabel = { fg = "yellow", bg = t.bg_mono3, },
 
