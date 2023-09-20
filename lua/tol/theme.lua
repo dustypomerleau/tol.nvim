@@ -438,10 +438,10 @@ theme.loadPlugins = function()
         CmpItemAbbrMatchFuzzy = { fg = t.orange, bold = true, },
 
         -- Flash
-        FlashMatch = { fg = t.none, bg = t.bg_mono3, },
-        FlashCurrent = { fg = "cyan", bg = t.bg_mono3, },
         FlashBackdrop = { link = "Comment", },
+        FlashCurrent = { fg = "cyan", },
         FlashLabel = { fg = "yellow", bg = t.bg_mono3, },
+        FlashMatch = { fg = t.search_fg, bg = t.bg_mono3, },
 
         -- FZF Lua
         FzfLuaBorder = { fg = t.ui_gray, },
