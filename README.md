@@ -12,34 +12,30 @@ The theme is in early beta—more plugin support soon.
 ## Supported plugins
 
 - [CoC][]
+- [Cmp][]
 - [FZF Lua][]
-- [Git Signs][]
+- [Flash][]
+- [Gitsigns][]
 - [Indent Blankline][]
 - [Leap][]
 - [LSP Diagnostics][]
 - [Lualine][]
+- [Notify][]
 - [Rainbow Delimiters][]
+- [Telescope][]
 - [Treesitter][]
+- [Trouble][]
 - [Yanky][]
-  <!-- - [aerial.nvim](https://github.com/stevearc/aerial.nvim) -->
-  <!-- - [BufferLine](https://github.com/akinsho/nvim-bufferline.lua) -->
-  <!-- - [Dashboard](https://github.com/glepnir/dashboard-nvim) -->
-  <!-- - [Git Gutter](https://github.com/airblade/vim-gitgutter) -->
-  <!-- - [headlines.nvim](https://github.com/lukas-reineke/headlines.nvim) -->
-  <!-- - [Lsp Saga](https://github.com/glepnir/lspsaga.nvim) -->
-  <!-- - [LSP Trouble](https://github.com/folke/lsp-trouble.nvim) -->
-  <!-- - [mini.nvim](https://github.com/echasnovski/mini.nvim) -->
-  <!-- - [Neogit](https://github.com/TimUntersberger/neogit) -->
-  <!-- - [nvim-notify](https://github.com/rcarriga/nvim-notify) -->
-  <!-- - [Nvim-Tree.lua](https://github.com/kyazdani42/nvim-tree.lua) -->
-  <!-- - [Telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) -->
-  <!-- - [vim-which-key](https://github.com/liuchengxu/vim-which-key) -->
 
 ## Installation
 
 ```vim
 " vim-plug
-Plug 'dustypomerleau/tol.nvim'
+call plug#begin()
+    Plug 'dustypomerleau/tol.nvim'
+call plug#end()
+
+colorscheme tol
 ```
 
 ```lua
@@ -49,32 +45,20 @@ require("lazy").setup({
         "dustypomerleau/tol.nvim",
         lazy = false, -- load your main colorscheme at startup
         priority = 1000, -- load colorscheme first
-        config = function() vim.cmd([[colorscheme tol]]) end,
+        config = true,
     },
 })
 ```
 
-## Usage
-
-Enable the colorscheme:
-
-```vim
-" vimscript
-colorscheme tol
-```
-
-```lua
--- lua
-vim.cmd[[colorscheme tol]]
-```
+## Extras
 
 Enable the Lualine theme:
 
 ```lua
-require("lualine").setup { options = { theme = "tol" }}
+require("lualine").setup({ options = { theme = "tol" }})
 ```
 
-Set up Rainbow Delimiters:
+Set up Rainbow Delimiters (3 levels are provided):
 
 ```lua
 local rainbow_delimiters = require("rainbow-delimiters")
@@ -91,12 +75,17 @@ vim.g.rainbow_delimiters = {
 ```
 
 [CoC]: https://github.com/neoclide/coc.nvim
+[Cmp]: https://github.com/hrsh7th/nvim-cmp 
+[Flash]: https://github.com/folke/flash.nvim
 [FZF Lua]: https://github.com/ibhagwan/fzf-lua
-[Git Signs]: https://github.com/lewis6991/gitsigns.nvim
+[Gitsigns]: https://github.com/lewis6991/gitsigns.nvim
 [Indent Blankline]: https://github.com/lukas-reineke/indent-blankline.nvim
 [Leap]: https://github.com/ggandor/leap.nvim
 [LSP Diagnostics]: https://neovim.io/doc/user/lsp.html
 [Lualine]: https://github.com/hoob3rt/lualine.nvim
+[Notify]: https://github.com/rcarriga/nvim-notify 
 [Rainbow Delimiters]: https://github.com/HiPhish/rainbow-delimiters.nvim
+[Telescope]: https://github.com/nvim-telescope/telescope.nvim
 [Treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
+[Trouble]: https://github.com/folke/trouble.nvim
 [Yanky]: https://github.com/gbprod/yanky.nvim
