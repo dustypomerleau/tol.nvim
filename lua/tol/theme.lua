@@ -441,7 +441,7 @@ theme.loadPlugins = function()
         FlashBackdrop = { link = "Comment", },
         FlashCurrent = { link = "CurSearch", },
         FlashLabel = { fg = "yellow", },
-        FlashMatch = { link = "IncSearch", },
+        FlashMatch = { fg = t.search_fg, bg = t.bg_mono3, },
 
         -- FZF Lua
         FzfLuaBorder = { fg = t.ui_gray, },
