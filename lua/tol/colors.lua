@@ -27,7 +27,7 @@ return {
     info = "#5ebdea",
     modified = "#5ebdea",
     search_bg = "#5e81ac",
-    search_fg = "#f8f6f1",
+    search_fg = "#f8f8f8",
     search_focused_bg = "#72aa00",
     ui_gray = "#616E88", -- line numbers, inactive states
     warning = "#f5c68f",

@@ -17,7 +17,7 @@ theme.loadSyntax = function()
         Delimiter = { fg = t.sky, },
         Error = { fg = t.error, },
         Exception = { fg = t.orange, }, -- try, catch
-        Float = { fg = t.pink, },       -- a floating point numeric constant
+        Float = { fg = t.pink, }, -- a floating point numeric constant
         Function = { fg = t.green, },
         htmlH1 = { fg = t.purple, bold = true, },
         htmlH2 = { fg = t.lemon, bold = true, },
@@ -26,7 +26,7 @@ theme.loadSyntax = function()
         htmlH5 = { fg = t.lemon, bold = true, },
         htmlLink = { fg = t.sky, underline = true, },
         Identifier = { fg = t.blue, }, -- types
-        Ignore = { fg = t.comment, },  -- left blank, hidden
+        Ignore = { fg = t.comment, }, -- left blank, hidden
         Include = { fg = t.orange, },
         Keyword = { fg = t.orange, },
         Label = { fg = t.orange, },
@@ -40,7 +40,7 @@ theme.loadSyntax = function()
         Number = { fg = t.pink, },
         Operator = { fg = t.orange, },
         PreCondit = { fg = t.orange, }, -- preprocessor #if, #else
-        PreProc = { fg = t.orange, },   -- generic Preprocessor
+        PreProc = { fg = t.orange, }, -- generic Preprocessor
         Punctuation = { fg = t.sky, },
         Repeat = { fg = t.orange, },
         Special = { fg = t.taupe, },
@@ -134,20 +134,20 @@ end
 
 theme.loadTerminal = function()
     vim.g.terminal_color_0 = t.bg_shade1 -- black
-    vim.g.terminal_color_1 = t.orange    -- red
-    vim.g.terminal_color_2 = t.forest    -- green
-    vim.g.terminal_color_3 = t.yellow    -- yellow
-    vim.g.terminal_color_4 = t.blue      -- blue
-    vim.g.terminal_color_5 = t.pink      -- magenta
-    vim.g.terminal_color_6 = t.cyan      -- cyan
-    vim.g.terminal_color_7 = t.taupe     -- white
-    vim.g.terminal_color_8 = t.bg_tint2  -- bright black
-    vim.g.terminal_color_9 = t.orange    -- bright red
-    vim.g.terminal_color_10 = t.green    -- bright green
-    vim.g.terminal_color_11 = t.yellow   -- bright yellow
-    vim.g.terminal_color_12 = "#9fc3e7"  -- bright blue
-    vim.g.terminal_color_13 = t.pink     -- bright magenta
-    vim.g.terminal_color_14 = t.sky      -- bright cyan
+    vim.g.terminal_color_1 = t.orange -- red
+    vim.g.terminal_color_2 = t.forest -- green
+    vim.g.terminal_color_3 = t.yellow -- yellow
+    vim.g.terminal_color_4 = t.blue -- blue
+    vim.g.terminal_color_5 = t.pink -- magenta
+    vim.g.terminal_color_6 = t.cyan -- cyan
+    vim.g.terminal_color_7 = t.taupe -- white
+    vim.g.terminal_color_8 = t.bg_tint2 -- bright black
+    vim.g.terminal_color_9 = t.orange -- bright red
+    vim.g.terminal_color_10 = t.green -- bright green
+    vim.g.terminal_color_11 = t.yellow -- bright yellow
+    vim.g.terminal_color_12 = "#9fc3e7" -- bright blue
+    vim.g.terminal_color_13 = t.pink -- bright magenta
+    vim.g.terminal_color_14 = t.sky -- bright cyan
     vim.g.terminal_color_15 = t.fg_tint2 -- bright white
 end
 
@@ -441,7 +441,7 @@ theme.loadPlugins = function()
         FlashBackdrop = { link = "Comment", },
         FlashCurrent = { link = "CurSearch", },
         FlashLabel = { fg = "yellow", },
-        FlashMatch = { fg = t.search_fg, bg = t.bg_mono3, },
+        FlashMatch = { link = "IncSearch", },
 
         -- FZF Lua
         FzfLuaBorder = { fg = t.ui_gray, },
@@ -450,10 +450,10 @@ theme.loadPlugins = function()
         FzfLuaTitle = { fg = t.sky, },
 
         -- GitSigns
-        GitSignsAdd = { fg = t.added, },       -- diff mode: Added line |diff.txt|
+        GitSignsAdd = { fg = t.added, }, -- diff mode: Added line |diff.txt|
         GitSignsChange = { fg = t.modified, }, -- diff mode: Changed line |diff.txt|
         GitSignsCurrentLineBlame = { fg = t.comment, },
-        GitSignsDelete = { fg = t.deleted, },  -- diff mode: Deleted line |diff.txt|
+        GitSignsDelete = { fg = t.deleted, }, -- diff mode: Deleted line |diff.txt|
 
         -- Indent Blankline v2
         IndentBlanklineChar = { fg = t.ui_gray, },
