@@ -3,6 +3,7 @@
 Tol.nvim is a complete rework of my [Tol theme for VS Code](https://github.com/dustypomerleau/tol), with more consistent highlighting across languages.
 It also has better separation of UI and syntax palettes, so it's easier to distinguish tooling feedback from code.
 Tol believes that punctuation and delimiters are first-class citizens—we hope you do, too.
+
 As always, credit to [Paul Tol](https://personal.sron.nl/~pault/) for the base colors and inspiration.
 
 [Rainbow delimiters][] and [Lualine][] are used in the screenshot.
