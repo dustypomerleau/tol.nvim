@@ -405,7 +405,7 @@ theme.loadLsp = function()
         ["@lsp.type.attributeBracket"] = { fg = t.purple, },
         ["@lsp.type.builtinAttribute"] = { fg = t.gray, },
         ["@lsp.type.builtinType"] = { fg = t.yellow, },
-        ["@lsp.type.class"] = { fg = t.pink, },
+        ["@lsp.type.class"] = { fg = t.blue, },
         ["@lsp.type.comment"] = { fg = t.comment, },
         ["@lsp.type.decorator"] = { fg = t.gray, },
         ["@lsp.type.derive"] = { fg = t.pink, },
