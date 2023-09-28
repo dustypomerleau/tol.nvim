@@ -16,6 +16,11 @@ return {
     lemon = "#f4dd64",
     purple = "#ff4ee0",
 
+    -- guides/indents
+    cyan_alpha = "#168d96",
+    lemon_alpha = "#d2c05e",
+    purple_alpha = "#933f8f",
+
     -- ui
     added = "#96c065",
     cursor_pink = "#ff218c",
