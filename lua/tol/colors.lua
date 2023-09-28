@@ -17,9 +17,9 @@ return {
     purple = "#ff4ee0",
 
     -- guides/indents
-    cyan_alpha = "#168d96",
+    cyan_alpha = "#0fadb4",
     lemon_alpha = "#d2c05e",
-    purple_alpha = "#933f8f",
+    purple_alpha = "#b744aa",
 
     -- ui
     added = "#96c065",
