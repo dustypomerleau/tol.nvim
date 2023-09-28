@@ -77,6 +77,33 @@ vim.g.rainbow_delimiters = {
 }
 ```
 
+Recommended settings for Indent Blankline version 3:
+
+```lua
+-- example configuration using lazy.nvim
+-- matches the Rainbow Delimiters bracket color only when the scope is active
+{
+    "lukas-reineke/indent-blankline.nvim",
+    lazy = false, -- load at startup
+    config = function()
+        require("ibl").setup({
+            indent = {
+                -- use a lighter weight for the indent guide
+                char = "│", -- box drawings light vertical (U+2502)
+                highlight = "LineNr",
+            },
+            scope = {
+                show_start = false, -- don't underline the start of the scope
+                highlight = { "RainbowRed", "RainbowYellow", "RainbowBlue", },
+            },
+        })
+    end,
+},
+```
+
+If you frequently change color schemes, you will need to set up hooks, as described in the [Indent Blankline][] README.
+
+
 [CoC]: https://github.com/neoclide/coc.nvim
 [Cmp]: https://github.com/hrsh7th/nvim-cmp 
 [Flash]: https://github.com/folke/flash.nvim
