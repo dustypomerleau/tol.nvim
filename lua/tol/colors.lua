@@ -18,7 +18,7 @@ return {
 
     -- guides/indents
     cyan_alpha = "#0fadb4",
-    lemon_alpha = "#d2c05e",
+    lemon_alpha = "#b0a358",
     purple_alpha = "#b744aa",
 
     -- ui
