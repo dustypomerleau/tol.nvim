@@ -411,6 +411,7 @@ theme.loadLsp = function()
         ["@lsp.type.derive"] = { fg = t.pink, },
         ["@lsp.type.enum"] = { fg = t.gray, },
         ["@lsp.type.enumMember"] = { fg = t.gray, },
+        ["@lsp.type.formatSpecifier"] = { link = "@punctuation.bracket", },
         ["@lsp.type.function"] = { fg = t.green, },
         ["@lsp.type.generic"] = { fg = t.gray, },
         ["@lsp.type.interface"] = { fg = t.pink, },
