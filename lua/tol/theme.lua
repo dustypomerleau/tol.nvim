@@ -96,7 +96,7 @@ theme.loadUi = function()
         NormalMode = { fg = t.taupe, },
         Pmenu = { fg = t.taupe, bg = t.bg_mono1, },
         PmenuSbar = { bg = t.bg_shade1, },
-        PmenuSel = { bg = t.bg, },
+        PmenuSel = { fg = t.orange, bg = t.bg, },
         PmenuThumb = { bg = t.ui_gray, },
         qfLineNr = { fg = t.ui_gray, },
         Question = { fg = t.taupe, },
