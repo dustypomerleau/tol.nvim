@@ -171,7 +171,6 @@ theme.loadTreesitter = function()
         ["@function"] = { fg = t.green, },
         ["@function.builtin"] = { fg = t.green, },
         ["@function.macro"] = { fg = t.yellow, },
-        ["@function.macro.rust"] = { fg = t.gray, },
         ["@include"] = { fg = t.orange, },
         ["@keyword"] = { fg = t.orange, },
         ["@keyword.function"] = { fg = t.orange, },
