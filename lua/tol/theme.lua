@@ -15,7 +15,7 @@ theme.loadSyntax = function()
         Debug = { fg = t.error, },
         Define = { fg = t.orange, },
         Delimiter = { fg = t.sky, },
-        Error = { fg = t.error, },
+        Error = { undercurl = true, sp = t.error, },
         Exception = { fg = t.orange, }, -- try, catch
         Float = { fg = t.pink, }, -- a floating point numeric constant
         Function = { fg = t.green, },
@@ -105,7 +105,7 @@ theme.loadUi = function()
         Search = { fg = t.search_fg, bg = t.search_bg, },
         SignColumn = { bg = t.bg, },
         SpecialKey = { fg = t.comment, },
-        SpellBad = { fg = t.error, undercurl = true, },
+        SpellBad = { undercurl = true, sp = t.error, },
         SpellCap = { fg = t.warning, undercurl = true, },
         SpellLocal = { fg = t.info, undercurl = true, },
         SpellRare = { fg = t.info, undercurl = true, },
@@ -164,7 +164,7 @@ theme.loadTreesitter = function()
         ["@constant.builtin.lua"] = { fg = t.pink, },
         ["@constant.macro"] = { fg = t.gray, },
         ["@constructor"] = { fg = t.green, },
-        ["@error"] = { fg = t.error, },
+        ["@error"] = { undercurl = true, sp = t.error, },
         ["@exception"] = { fg = t.orange, },
         ["@field"] = { fg = t.gray, },
         ["@float"] = { fg = t.pink, },
