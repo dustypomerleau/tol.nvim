@@ -444,7 +444,7 @@ theme.loadPlugins = function()
         CmpItemKindEnumMember = { link = "@lsp.type.enumMember", },
         CmpItemKindEvent = { fg = t.taupe, },
         CmpItemKindField = { link = "@field", },
-        CmpItemKindFile = { fg = t.blue, },
+        CmpItemKindFile = { fg = t.sky, },
         CmpItemKindFolder = { link = "Directory", },
         CmpItemKindFunction = { link = "@lsp.type.function", },
         CmpItemKindInterface = { link = "@lsp.type.interface", },
