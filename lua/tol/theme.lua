@@ -477,9 +477,12 @@ theme.loadPlugins = function()
 
         -- GitSigns
         GitSignsAdd = { fg = t.added, }, -- diff mode: Added line |diff.txt|
+        GitSignsAddInline = { bg = t.diff_emph_plus, },
         GitSignsChange = { fg = t.modified, }, -- diff mode: Changed line |diff.txt|
+        GitSignsChangeInline = { bg = t.bg_mono3, },
         GitSignsCurrentLineBlame = { fg = t.comment, },
         GitSignsDelete = { fg = t.deleted, }, -- diff mode: Deleted line |diff.txt|
+        GitSignsDeleteInline = { bg = t.diff_emph_minus, },
 
         -- Indent Blankline v2
         IndentBlanklineChar = { fg = t.ui_gray, },

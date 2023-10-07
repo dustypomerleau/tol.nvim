@@ -26,6 +26,8 @@ return {
     cursor_pink = "#ff218c",
     cursor_yellow = "#fbfc86",
     deleted = "#f46a80",
+    diff_emph_minus = "#742031",
+    diff_emph_plus = "#44611b",
     diff_minus = "#542b30",
     diff_plus = "#343d2a",
     error = "#f46a80",
