@@ -454,7 +454,7 @@ theme.loadPlugins = function()
         CmpItemKindOperator = { link = "@operator", },
         CmpItemKindProperty = { link = "@lsp.type.property", },
         CmpItemKindReference = { link = "@text.reference", },
-        CmpItemKindSnippet = { fg = t.taupe, },
+        CmpItemKindSnippet = { link = "@lsp.type.macro", },
         CmpItemKindStruct = { link = "@lsp.type.struct", },
         CmpItemKindText = { link = "@text", },
         CmpItemKindTypeParameter = { link = "@lsp.type.parameter", },
