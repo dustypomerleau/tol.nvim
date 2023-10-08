@@ -373,7 +373,7 @@ theme.loadLsp = function()
         DiagnosticUnderlineHint = { link = "LspDiagnosticsUnderlineHint", },
         DiagnosticUnderlineInfo = { link = "LspDiagnosticsUnderlineInformation", },
         DiagnosticUnderlineWarn = { link = "LspDiagnosticsUnderlineWarning", },
-        DiagnosticUnnecessary = { undercurl = true, sp = t.info, },
+        DiagnosticUnnecessary = {}, -- override commenting out code gated by #[cfg()], etc.
         DiagnosticVirtualTextError = { link = "LspDiagnosticsVirtualTextError", },
         DiagnosticVirtualTextHint = { link = "LspDiagnosticsVirtualTextHint", },
         DiagnosticVirtualTextInfo = { link = "LspDiagnosticsVirtualTextInformation", },
