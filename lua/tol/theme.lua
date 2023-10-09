@@ -477,16 +477,15 @@ theme.loadPlugins = function()
 
         -- GitSigns
         GitSignsAdd = { fg = t.added, }, -- gutter
-        GitSignsAddInline = { fg = t.none, bg = t.diff_plus, }, -- line diffs in diffthis()
-        GitSignsAddLnInline = { fg = t.none, bg = t.diff_emph_plus, }, -- word diffs in diffthis()
-        GitSignsAddPreview = { fg = t.none, bg = t.diff_plus, }, -- line diffs in previews
-        GitSignsChange = { fg = t.modified, }, -- gutter
+        GitSignsAddInline = { fg = t.none, bg = t.diff_emph_plus, }, -- word diff when config.word_diff == false
+        GitSignsAddLnInline = { fg = t.none, bg = t.diff_emph_plus, }, -- word diff when config.word_diff == true
+        GitSignsAddPreview = { fg = t.none, bg = t.diff_plus, }, -- line (not word) diffs in previews
+        GitSignsChange = { fg = t.modified, },
         GitSignsChangeInline = { fg = t.none, bg = t.bg_mono3, },
         GitSignsChangeLnInline = { fg = t.none, bg = t.bg_mono3, },
-        GitSignsChangePreview = { fg = t.none, bg = t.bg_mono1, },
         GitSignsCurrentLineBlame = { fg = t.comment, },
-        GitSignsDelete = { fg = t.deleted, }, -- gutter
-        GitSignsDeleteInline = { fg = t.none, bg = t.diff_minus, },
+        GitSignsDelete = { fg = t.deleted, },
+        GitSignsDeleteInline = { fg = t.none, bg = t.diff_emph_minus, },
         GitSignsDeleteLnInline = { fg = t.none, bg = t.diff_emph_minus, },
         GitSignsDeletePreview = { fg = t.none, bg = t.diff_minus, },
 
