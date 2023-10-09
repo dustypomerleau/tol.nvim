@@ -71,9 +71,9 @@ theme.loadUi = function()
         CursorLine = { fg = t.none, bg = t.bg_shade1, },
         CursorLineNr = { fg = t.purple, },
         DiffAdd = { bg = t.diff_plus, },
-        DiffChange = { bg = t.bg_mono3, },
+        DiffChange = { bg = t.bg_mono1, },
         DiffDelete = { bg = t.diff_minus, },
-        DiffText = { fg = t.warning, },
+        DiffText = { fg = t.none, bg = t.bg_mono3, }, -- let original fg groups show through in diffs
         Directory = { fg = t.blue, }, -- directory names
         EndOfBuffer = { fg = t.ui_gray, },
         ErrorMsg = { fg = t.error, },
@@ -476,13 +476,19 @@ theme.loadPlugins = function()
         FzfLuaTitle = { fg = t.sky, },
 
         -- GitSigns
-        GitSignsAdd = { fg = t.added, }, -- diff mode: Added line |diff.txt|
-        GitSignsAddInline = { bg = t.diff_emph_plus, },
-        GitSignsChange = { fg = t.modified, }, -- diff mode: Changed line |diff.txt|
-        GitSignsChangeInline = { bg = t.bg_mono3, },
+        GitSignsAdd = { fg = t.added, }, -- gutter
+        GitSignsAddInline = { fg = t.none, bg = t.diff_plus, }, -- line diffs in diffthis()
+        GitSignsAddLnInline = { fg = t.none, bg = t.diff_emph_plus, }, -- word diffs in diffthis()
+        GitSignsAddPreview = { fg = t.none, bg = t.diff_plus, }, -- line diffs in previews
+        GitSignsChange = { fg = t.modified, }, -- gutter
+        GitSignsChangeInline = { fg = t.none, bg = t.bg_mono3, },
+        GitSignsChangeLnInline = { fg = t.none, bg = t.bg_mono3, },
+        GitSignsChangePreview = { fg = t.none, bg = t.bg_mono1, },
         GitSignsCurrentLineBlame = { fg = t.comment, },
-        GitSignsDelete = { fg = t.deleted, }, -- diff mode: Deleted line |diff.txt|
-        GitSignsDeleteInline = { bg = t.diff_emph_minus, },
+        GitSignsDelete = { fg = t.deleted, }, -- gutter
+        GitSignsDeleteInline = { fg = t.none, bg = t.diff_minus, },
+        GitSignsDeleteLnInline = { fg = t.none, bg = t.diff_emph_minus, },
+        GitSignsDeletePreview = { fg = t.none, bg = t.diff_minus, },
 
         -- Indent Blankline v2
         IndentBlanklineChar = { fg = t.ui_gray, },
