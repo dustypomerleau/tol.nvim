@@ -511,7 +511,7 @@ theme.loadPlugins = function()
         NotifyDEBUGBorder = { fg = t.ui_gray, },
         NotifyDEBUGIcon = { fg = t.info, },
         NotifyDEBUGTitle = { fg = t.info, },
-        NotifyERRORBorder = { fg = t.ui_gray, },
+        NotifyERRORBorder = { fg = t.error, },
         NotifyERRORIcon = { fg = t.error, },
         NotifyERRORTitle = { fg = t.error, },
         NotifyINFOBorder = { fg = t.ui_gray, },
@@ -520,7 +520,7 @@ theme.loadPlugins = function()
         NotifyTRACEBorder = { fg = t.ui_gray, },
         NotifyTRACEIcon = { fg = t.info, },
         NotifyTRACETitle = { fg = t.info, },
-        NotifyWARNBorder = { fg = t.ui_gray, },
+        NotifyWARNBorder = { fg = t.warning, },
         NotifyWARNIcon = { fg = t.warning, },
         NotifyWARNTitle = { fg = t.warning, },
 
