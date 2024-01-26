@@ -179,6 +179,7 @@ theme.loadTreesitter = function()
         ["@keyword.storage.lifetime"] = { fg = t.pink, },
         ["@label"] = { fg = t.gray, },
         ["@method"] = { fg = t.green, },
+        ["@module"] = { link = "@lsp.type.namespace", },
         ["@namespace"] = { fg = t.taupe, },
         ["@namespace.latex"] = { fg = t.gray, },
         ["@namespace.vim"] = { fg = t.gray, },
