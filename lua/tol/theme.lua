@@ -184,6 +184,7 @@ theme.loadTreesitter = function()
         ["@markup.link.label"] = { link = "@text.reference", },
         ["@markup.link.url"] = { link = "@string", },
         ["@markup.list"] = { fg = t.pink, bold = true, },
+        ["@markup.raw"] = { link = "@text.literal", },
         ["@markup.strong"] = { link = "@text.strong", },
         ["@method"] = { fg = t.green, },
         ["@module"] = { link = "@lsp.type.namespace", },
