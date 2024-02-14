@@ -434,7 +434,7 @@ theme.loadLsp = function()
         ["@lsp.type.heading"] = { fg = t.orange, bold = true, },
         ["@lsp.type.interface"] = { fg = t.pink, },
         ["@lsp.type.keyword"] = { fg = t.orange, },
-        ["@lsp.type.label"] = { fg = t.gray, },
+        ["@lsp.type.label"] = { fg = t.pink, },
         ["@lsp.type.lifetime"] = { fg = t.pink, },
         ["@lsp.type.link"] = { fg = t.forest, },
         ["@lsp.type.macro"] = { fg = t.yellow, },
