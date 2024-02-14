@@ -454,7 +454,7 @@ theme.loadLsp = function()
         ["@lsp.type.typeAlias"] = { fg = t.blue, },
         ["@lsp.type.typeParameter"] = { fg = t.blue, },
         ["@lsp.type.variable"] = { fg = t.taupe, },
-        ["@lsp.typemod.delim"] = { fg = t.orange, },
+        ["@lsp.typemod.delim"] = { fg = t.sky, },
         ["@lsp.typemod.operator"] = { fg = t.orange, },
         ["@lsp.typemod.text.emph"] = { fg = t.sky, italic = true, },
         ["@lsp.typemod.text.math"] = { fg = t.pink, },
