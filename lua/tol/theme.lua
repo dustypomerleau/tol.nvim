@@ -415,7 +415,6 @@ theme.loadLsp = function()
         LspReferenceRead = { bg = t.bg_mono1, },
         LspReferenceText = { bg = t.bg_mono1, },
         LspReferenceWrite = { bg = t.bg_mono1, },
-        ["@lsp.mod.math"] = { fg = t.gray, },
         ["@lsp.type.attributeBracket"] = { fg = t.purple, },
         ["@lsp.type.builtinAttribute"] = { fg = t.gray, },
         ["@lsp.type.builtinType"] = { fg = t.yellow, },
@@ -457,6 +456,7 @@ theme.loadLsp = function()
         ["@lsp.typemod.delim"] = { fg = t.sky, },
         ["@lsp.typemod.operator"] = { fg = t.orange, },
         ["@lsp.typemod.text.emph"] = { fg = t.sky, italic = true, },
+        ["@lsp.typemod.text.math"] = { fg = t.yellow, },
         ["@lsp.typemod.text.strong"] = { fg = t.sky, bold = true, },
     }
 end
