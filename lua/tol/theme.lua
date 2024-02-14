@@ -439,6 +439,7 @@ theme.loadLsp = function()
         ["@lsp.type.method"] = { fg = t.green, },
         ["@lsp.type.namespace"] = { fg = t.taupe, },
         ["@lsp.type.number"] = { fg = t.pink, },
+        ["@lsp.type.operator"] = { fg = t.orange, },
         ["@lsp.type.parameter"] = { fg = t.taupe, },
         ["@lsp.type.pol"] = { fg = t.gray, },
         ["@lsp.type.property"] = { fg = t.gray, },
@@ -456,7 +457,7 @@ theme.loadLsp = function()
         ["@lsp.typemod.delim"] = { fg = t.sky, },
         ["@lsp.typemod.operator"] = { fg = t.orange, },
         ["@lsp.typemod.text.emph"] = { fg = t.sky, italic = true, },
-        ["@lsp.typemod.text.math"] = { fg = t.yellow, },
+        ["@lsp.typemod.text.math"] = { fg = t.pink, },
         ["@lsp.typemod.text.strong"] = { fg = t.sky, bold = true, },
     }
 end
