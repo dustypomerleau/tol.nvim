@@ -19,24 +19,12 @@ theme.loadSyntax = function()
         Exception = { fg = t.orange }, -- try, catch
         Float = { fg = t.pink }, -- a floating point numeric constant
         Function = { fg = t.green },
-        htmlH1 = { fg = t.purple, bold = true },
-        htmlH2 = { fg = t.lemon, bold = true },
-        htmlH3 = { fg = t.cyan, bold = true },
-        htmlH4 = { fg = t.purple, bold = true },
-        htmlH5 = { fg = t.lemon, bold = true },
-        htmlLink = { fg = t.sky, underline = true },
         Identifier = { fg = t.blue }, -- types
         Ignore = { fg = t.comment }, -- left blank, hidden
         Include = { fg = t.orange },
         Keyword = { fg = t.orange },
         Label = { fg = t.orange },
         Macro = { fg = t.yellow },
-        markdownH1 = { fg = t.purple, bold = true },
-        markdownH1Delimiter = { fg = t.sky },
-        markdownH2 = { fg = t.lemon, bold = true },
-        markdownH2Delimiter = { fg = t.sky },
-        markdownH3 = { fg = t.cyan, bold = true },
-        markdownH3Delimiter = { fg = t.sky },
         Number = { fg = t.pink },
         Operator = { fg = t.orange },
         PreCondit = { fg = t.orange }, -- preprocessor #if, #else
@@ -56,6 +44,24 @@ theme.loadSyntax = function()
         Type = { fg = t.blue },
         Typedef = { fg = t.orange },
         Underlined = { underline = true },
+        htmlH1 = { fg = t.purple, bold = true },
+        htmlH2 = { fg = t.lemon, bold = true },
+        htmlH3 = { fg = t.cyan, bold = true },
+        htmlH4 = { fg = t.purple, bold = true },
+        htmlH5 = { fg = t.lemon, bold = true },
+        htmlLink = { fg = t.sky, underline = true },
+        markdownH1 = { fg = t.purple, bold = true },
+        markdownH1Delimiter = { fg = t.sky },
+        markdownH2 = { fg = t.lemon, bold = true },
+        markdownH2Delimiter = { fg = t.sky },
+        markdownH3 = { fg = t.cyan, bold = true },
+        markdownH3Delimiter = { fg = t.sky },
+        markdownH4 = { fg = t.purple, bold = true },
+        markdownH4Delimiter = { fg = t.sky },
+        markdownH5 = { fg = t.lemon, bold = true },
+        markdownH5Delimiter = { fg = t.sky },
+        markdownH6 = { fg = t.cyan, bold = true },
+        markdownH6Delimiter = { fg = t.sky },
     }
 end
 
@@ -81,9 +87,6 @@ theme.loadUi = function()
         FloatTitle = { fg = t.taupe },
         FoldColumn = { fg = t.modified },
         Folded = { fg = t.modified },
-        healthError = { fg = t.error },
-        healthSuccess = { fg = t.modified },
-        healthWarning = { fg = t.warning },
         IncSearch = { fg = t.search_fg, bg = t.search_bg },
         InsertMode = { fg = t.purple },
         LineNr = { fg = t.ui_gray },
@@ -98,7 +101,6 @@ theme.loadUi = function()
         PmenuSbar = { bg = t.bg_shade1 },
         PmenuSel = { fg = t.search_fg, bg = t.bg_mono3 },
         PmenuThumb = { bg = t.ui_gray },
-        qfLineNr = { fg = t.ui_gray },
         Question = { fg = t.taupe },
         QuickFixLine = { fg = t.gray },
         ReplaceMode = { fg = t.sky },
@@ -129,6 +131,10 @@ theme.loadUi = function()
         Warnings = { fg = t.warning },
         WildMenu = { fg = t.orange, bg = t.none, bold = true },
         WinSeparator = { fg = t.bg, bg = t.bg },
+        healthError = { fg = t.error },
+        healthSuccess = { fg = t.modified },
+        healthWarning = { fg = t.warning },
+        qfLineNr = { fg = t.ui_gray },
     }
 end
 
