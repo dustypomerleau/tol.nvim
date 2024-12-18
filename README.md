@@ -103,9 +103,8 @@ Recommended settings for Indent Blankline version 3:
 
 If you frequently change color schemes, you will need to set up hooks, as described in the [Indent Blankline][] README.
 
-
 [CoC]: https://github.com/neoclide/coc.nvim
-[Cmp]: https://github.com/hrsh7th/nvim-cmp 
+[Cmp]: https://github.com/hrsh7th/nvim-cmp
 [Flash]: https://github.com/folke/flash.nvim
 [FZF Lua]: https://github.com/ibhagwan/fzf-lua
 [Gitsigns]: https://github.com/lewis6991/gitsigns.nvim
@@ -113,7 +112,7 @@ If you frequently change color schemes, you will need to set up hooks, as descri
 [Leap]: https://github.com/ggandor/leap.nvim
 [LSP Diagnostics]: https://neovim.io/doc/user/lsp.html
 [Lualine]: https://github.com/hoob3rt/lualine.nvim
-[Notify]: https://github.com/rcarriga/nvim-notify 
+[Notify]: https://github.com/rcarriga/nvim-notify
 [Rainbow Delimiters]: https://github.com/HiPhish/rainbow-delimiters.nvim
 [Telescope]: https://github.com/nvim-telescope/telescope.nvim
 [Treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
