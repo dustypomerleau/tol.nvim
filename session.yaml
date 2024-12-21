@@ -1,0 +1,9 @@
+session_name: tol
+windows:
+  - window_name: nvim
+    panes:
+      - nvim src/lib.rs
+  - window_name: fish
+    focus: true
+    panes:
+      - jj status
