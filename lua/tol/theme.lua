@@ -477,6 +477,34 @@ end
 
 theme.loadPlugins = function()
     return {
+        -- Blink
+        BlinkCmpKindClass = { link = "@lsp.type.class" },
+        BlinkCmpKindColor = { fg = t.taupe },
+        BlinkCmpKindConstant = { link = "@constant" },
+        BlinkCmpKindConstructor = { link = "@constructor" },
+        BlinkCmpKindEnum = { link = "@lsp.type.enum" },
+        BlinkCmpKindEnumMember = { link = "@lsp.type.enumMember" },
+        BlinkCmpKindEvent = { fg = t.taupe },
+        BlinkCmpKindField = { link = "@field" },
+        BlinkCmpKindFile = { fg = t.sky },
+        BlinkCmpKindFolder = { link = "Directory" },
+        BlinkCmpKindFunction = { link = "@lsp.type.function" },
+        BlinkCmpKindInterface = { link = "@lsp.type.interface" },
+        BlinkCmpKindKeyword = { link = "@lsp.type.keyword" },
+        BlinkCmpKindMethod = { link = "@lsp.type.method" },
+        BlinkCmpKindModule = { link = "@lsp.type.namespace" },
+        BlinkCmpKindOperator = { link = "@operator" },
+        BlinkCmpKindProperty = { link = "@lsp.type.property" },
+        BlinkCmpKindReference = { link = "@text.reference" },
+        BlinkCmpKindSnippet = { link = "@lsp.type.macro" },
+        BlinkCmpKindStruct = { link = "@lsp.type.struct" },
+        BlinkCmpKindText = { link = "@text" },
+        BlinkCmpKindTypeParameter = { link = "@lsp.type.parameter" },
+        BlinkCmpKindUnit = { fg = t.taupe },
+        BlinkCmpKindValue = { fg = t.taupe },
+        BlinkCmpKindVariable = { link = "@lsp.type.variable" },
+        BlinkCmpLabelMatch = { fg = t.orange, bold = true },
+
         -- Cmp
         CmpItemAbbrMatch = { fg = t.orange, bold = true },
         CmpItemAbbrMatchFuzzy = { fg = t.orange, bold = true },

@@ -12,6 +12,7 @@ As always, credit to [Paul Tol](https://personal.sron.nl/~pault/) for the base c
 
 ## Supported plugins
 
+- [Blink][]
 - [CoC][]
 - [Cmp][]
 - [FZF Lua][]
@@ -103,6 +104,7 @@ Recommended settings for Indent Blankline version 3:
 
 If you frequently change color schemes, you will need to set up hooks, as described in the [Indent Blankline][] README.
 
+[Blink]: https://github.com/Saghen/blink.cmp
 [CoC]: https://github.com/neoclide/coc.nvim
 [Cmp]: https://github.com/hrsh7th/nvim-cmp
 [Flash]: https://github.com/folke/flash.nvim
