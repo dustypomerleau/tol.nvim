@@ -41,17 +41,9 @@ require("lazy").setup({
         lazy = false, -- load the colorscheme at startup
         priority = 1000, -- load colorscheme first
         config = true,
+        version = "*", -- (optional) pin to release
     },
 })
-```
-
-```vim
-" vim-plug
-call plug#begin()
-    Plug 'dustypomerleau/tol.nvim'
-call plug#end()
-
-colorscheme tol
 ```
 
 ## Extras
