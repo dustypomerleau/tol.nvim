@@ -24,6 +24,7 @@ As always, credit to [Paul Tol](https://personal.sron.nl/~pault/) for the base c
 - [Lualine][]
 - [Notify][]
 - [Rainbow Delimiters][]
+- [Snacks][]
 - [Telescope][]
 - [Treesitter][]
 - [Trouble][]
@@ -108,6 +109,7 @@ If you frequently change color schemes, you will need to set up hooks, as descri
 [Lualine]: https://github.com/hoob3rt/lualine.nvim
 [Notify]: https://github.com/rcarriga/nvim-notify
 [Rainbow Delimiters]: https://github.com/HiPhish/rainbow-delimiters.nvim
+[Snacks]: https://github.com/folke/snacks.nvim
 [Telescope]: https://github.com/nvim-telescope/telescope.nvim
 [Treesitter]: https://github.com/nvim-treesitter/nvim-treesitter
 [Trouble]: https://github.com/folke/trouble.nvim
