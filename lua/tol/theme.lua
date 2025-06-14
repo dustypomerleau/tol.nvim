@@ -602,9 +602,9 @@ theme.loadPlugins = function()
 
         -- Snacks indent
         SnacksIndent = { fg = t.ui_gray },
-        SnacksIndent1 = { fg = t.purple_alpha },
-        SnacksIndent2 = { fg = t.lemon_alpha },
-        SnacksIndent3 = { fg = t.cyan_alpha },
+        SnacksIndentRed = { fg = t.purple_alpha },
+        SnacksIndentYellow = { fg = t.lemon_alpha },
+        SnacksIndentBlue = { fg = t.cyan_alpha },
 
         -- Telescope, see https://github.com/nvim-telescope/telescope.nvim/blob/master/plugin/telescope.lua
         TelescopeBorder = { fg = t.ui_gray },
