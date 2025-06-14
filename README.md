@@ -55,7 +55,7 @@ Enable the Lualine theme:
 require("lualine").setup({ options = { theme = "tol" }})
 ```
 
-Set up Rainbow Delimiters (3 levels are provided):
+Example settings for Rainbow Delimiters (3 levels are provided):
 
 ```lua
 local rainbow_delimiters = require("rainbow-delimiters")
@@ -63,6 +63,7 @@ local rainbow_delimiters = require("rainbow-delimiters")
 vim.g.rainbow_delimiters = {
     strategy = { [""] = rainbow_delimiters.strategy["global"] },
     query = { [""] = "rainbow-delimiters" },
+
     highlight = {
         "RainbowDelimiterRed",
         "RainbowDelimiterYellow",
@@ -71,14 +72,43 @@ vim.g.rainbow_delimiters = {
 }
 ```
 
-Recommended settings for Indent Blankline version 3:
+Example settings for Snacks.nvim indent guides:
+
+```lua
+{
+    "folke/snacks.nvim",
+    version = "*",
+    priority = 1000,
+    lazy = false,
+
+    opts = {
+        indent = {
+            enabled = true,
+            only_scope = true,
+            priority = 1,
+            hl = { "SnacksIndent" },
+            animate = { enabled = false },
+
+            scope = {
+                enabled = true,
+                priority = 200,
+                hl = { "SnacksIndent1", "SnacksIndent2", "SnacksIndent3" },
+            },
+        },
+    },
+}
+```
+
+Example settings for Indent Blankline indent guides:
 
 ```lua
 -- example configuration using lazy.nvim
--- matches the Rainbow Delimiters bracket color only when the scope is active
+-- uses rainbow colors only when the scope is active
 {
     "lukas-reineke/indent-blankline.nvim",
-    lazy = false, -- load at startup
+    version = "*",
+    lazy = false,
+
     config = function()
         require("ibl").setup({
             indent = {
@@ -86,6 +116,7 @@ Recommended settings for Indent Blankline version 3:
                 char = "│", -- box drawings light vertical (U+2502)
                 highlight = "LineNr",
             },
+
             scope = {
                 show_start = false, -- don't underline the start of the scope
                 highlight = { "RainbowRed", "RainbowYellow", "RainbowBlue", },
@@ -95,7 +126,7 @@ Recommended settings for Indent Blankline version 3:
 },
 ```
 
-If you frequently change color schemes, you will need to set up hooks, as described in the [Indent Blankline][] README.
+If you use Indent Blankline and you frequently change color schemes, you will need to set up hooks, as described in the [Indent Blankline][] README.
 
 [Blink]: https://github.com/Saghen/blink.cmp
 [CoC]: https://github.com/neoclide/coc.nvim
