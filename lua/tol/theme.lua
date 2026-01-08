@@ -578,6 +578,9 @@ theme.loadPlugins = function()
         -- Nvim LSPconfig
         LspInfoBorder = { fg = t.ui_gray },
 
+        -- Markview
+        MarkviewCodeInfo = { bg = t.bg_mono1 },
+
         -- Nvim Notify
         NotifyDEBUGBorder = { fg = t.ui_gray },
         NotifyDEBUGIcon = { fg = t.info },
