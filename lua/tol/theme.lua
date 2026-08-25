@@ -575,11 +575,28 @@ theme.loadPlugins = function()
         LeapLabelSelected = { fg = "yellow", bg = t.cursor_pink, nocombine = true },
         LeapMatch = { fg = "yellow", bg = t.search_bg, nocombine = true },
 
+        -- Markview
+        MarkviewCode = { bg = t.bg_mono1 },
+        MarkviewCodeInfo = { bg = t.bg_mono1 },
+        MarkviewHeading1 = { bg = t.bg_mono1 },
+        MarkviewHeading1Sign = { fg = t.purple },
+        MarkviewHeading2 = { bg = t.bg_mono1 },
+        MarkviewHeading2Sign = { fg = t.lemon },
+        MarkviewHeading3 = { bg = t.bg_mono1 },
+        MarkviewHeading3Sign = { fg = t.cyan },
+        MarkviewHeading4 = { bg = t.bg_mono1 },
+        MarkviewHeading4Sign = { fg = t.purple },
+        MarkviewHeading5 = { bg = t.bg_mono1 },
+        MarkviewHeading5Sign = { fg = t.lemon },
+        MarkviewHeading6 = { bg = t.bg_mono1 },
+        MarkviewHeading6Sign = { fg = t.cyan },
+        MarkviewInlineCode = { bg = t.bg_mono1 },
+        MarkviewListItemMinus = { link = "@markup.list" },
+        MarkviewListItemPlus = { link = "@markup.list" },
+        MarkviewListItemStar = { link = "@markup.list" },
+
         -- Nvim LSPconfig
         LspInfoBorder = { fg = t.ui_gray },
-
-        -- Markview
-        MarkviewCodeInfo = { bg = t.bg_mono1 },
 
         -- Nvim Notify
         NotifyDEBUGBorder = { fg = t.ui_gray },
